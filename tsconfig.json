@@ -13,7 +13,7 @@
         "node_modules/@types"
       ],
       "moduleResolution": "node",
-      "outDir": "./lib",
+      "outDir": "./dist",
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "removeComments": true,

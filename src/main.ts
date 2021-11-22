@@ -1,4 +1,6 @@
-const run = async (): Promise<void> => {};
+const run = async (): Promise<void> => {
+  return;
+};
 
 run();
 

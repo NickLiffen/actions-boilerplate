@@ -1,0 +1,23 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "include": [
+      "./src/*.ts"
+    ],
+    "exclude": [
+      "dist",
+      "node_modules"
+    ],
+    "compilerOptions": {
+      "typeRoots": [
+        "./types",
+        "node_modules/@types"
+      ],
+      "moduleResolution": "node",
+      "outDir": "./lib",
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "resolveJsonModule": true
+    }
+  }

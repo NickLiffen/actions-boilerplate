@@ -1,0 +1,37 @@
+--- 
+description: "Updates the tracking issue and informs the sales rep and ASE that the GHAS Trial has been extended"
+steps: 
+  - 
+    body: 
+      - 
+        attributes: 
+          description: "Only members of the Sales Ops team are allowed to use this slash command. DO NOT USE IF YOU ARE NOT A MEBER OF SALES OPS!!"
+          label: "Can you please confirm you are a member of the Sales Operations Tea,"
+          options: 
+            - 
+              label: "🟢 Yes I am a member"
+              value: ~
+            - 
+              label: "🔴 No I am not a member - DO NOT FILL OUT THIS FORM!!"
+              value: 🔴
+        type: dropdown
+        validations: 
+          required: true
+      - 
+        attributes: 
+          description: "How many days has the GHAS trial been extended for?"
+          format: number
+          label: trial_extended_days
+          placeholder: "30"
+        type: input
+        validations: 
+          required: true
+    style: embedded
+    type: form
+  - 
+    eventType: ghasextended
+    type: repository_dispatch
+surfaces: 
+  - issue
+title: "GitHub Advanced Security Trial - Extended (New)"
+trigger: extended

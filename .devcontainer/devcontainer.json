@@ -1,6 +1,14 @@
 {
     "name": "nickliffen/ghas-enablement",
     "image": "ghcr.io/nickliffen/csenv:main",
+    "runArgs": [
+      "--init",
+      "--privileged"
+    ],
+    "mounts": [
+      "source=dind-var-lib-docker,target=/var/lib/docker,type=volume"
+    ],
+    "overrideCommand": false,
     "settings": {},
     "extensions": [
       "dbaeumer.vscode-eslint",

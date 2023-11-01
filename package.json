@@ -24,7 +24,7 @@
     "@vercel/ncc": "^0.38.1"
   },
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.2",
+    "@tsconfig/node20": "^20.1.2",
     "@types/jest": "^29.5.7",
     "@types/json-schema": "^7.0.14",
     "@types/node": "^20.8.10",
@@ -43,6 +43,6 @@
     "typescript": "^5.2.2"
   },
   "engines": {
-    "node": "18"
+    "node": "20"
   }
 }

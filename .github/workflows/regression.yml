@@ -16,7 +16,7 @@ jobs:
       - 
         id: token-collection
         name: "Generate GitHub App JWT"
-        uses: getsentry/action-github-app-token@v2
+        uses: getsentry/action-github-app-token@v3
         with: 
           app_id: "${{ secrets.APP_ID }}"
           private_key: "${{ secrets.APP_KEY }}"
